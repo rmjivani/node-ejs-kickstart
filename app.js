@@ -25,6 +25,12 @@ app.get('/about',(req,res)=>{
     res.render('pages/about',{'title': title});
 });
 
+//contact URL
+app.get('/contact',(req,res)=>{
+    let title = "Contact Us";
+    res.render('pages/contact',{'title': title});
+});
+
 //Set server to listen for requests
 app.listen(port, () => {
   console.log(`Server running at port: ${port}`);
