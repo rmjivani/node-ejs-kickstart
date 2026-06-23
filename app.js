@@ -15,20 +15,26 @@ app.use(express.static(__dirname + '/public'));
 
 //index/home URL
 app.get('/',(req,res)=>{
-    let title = "Home Page";
+    let title = "Home";
     res.render('pages/index',{'title': title});
 });
 
-//about URL
-app.get('/about',(req,res)=>{
-    let title = "About Page";
-    res.render('pages/about',{'title': title});
+//badminton URL
+app.get('/badminton',(req,res)=>{
+    let title = "Badminton";
+    res.render('pages/badminton',{'title': title});
 });
 
-//contact URL
-app.get('/contact',(req,res)=>{
-    let title = "Contact Us";
-    res.render('pages/contact',{'title': title});
+//coffee URL
+app.get('/coffee',(req,res)=>{
+    let title = "Coffee Spots";
+    res.render('pages/coffee',{'title': title});
+});
+
+//daily grind URL
+app.get('/daily-grind',(req,res)=>{
+    let title = "Daily Grind";
+    res.render('pages/daily-grind',{'title': title});
 });
 
 //Set server to listen for requests
